@@ -3,7 +3,8 @@ import React from 'react'
 
 import theGiantImg from "@/assets/images/the-giant.jpg"
 
-const app = () => {
+
+const explore = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -11,32 +12,32 @@ const app = () => {
       resizeMode="cover"
       style={styles.image}
       >
-      <Text style={styles.text}>Zompendium</Text>
+      <Text style={styles.text}>Black Ops 7</Text>
       </ImageBackground>
     </View>
   )
 }
 
-export default app
+export default explore
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: "column",
   },
 
   image: {
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
     flex: 1,
-    resizeMode: 'cover',
-    justifyContent: 'center'
+    resizeMode: "cover",
+    justifyContent: "center"
   },
 
   text: {
-    color: 'white',
+    color: "white",
     fontSize: 42,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontWeight: "bold",
+    textAlign: "center"
   }
 })
