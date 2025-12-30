@@ -13,13 +13,6 @@ const app = () => {
       style={styles.image}
       >
       <Text style={styles.title}>Zompendium</Text>
-
-      <Link href="/BlackOps7Home" style={{marginHorizontal: 'auto'}} asChild>
-        <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Black Ops 7</Text>
-        </Pressable>
-      </Link>
-
       </ImageBackground>
     </View>
   )

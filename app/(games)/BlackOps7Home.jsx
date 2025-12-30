@@ -4,7 +4,7 @@ import React from 'react'
 import theGiantImg from "@/assets/images/the-giant.jpg"
 
 
-const explore = () => {
+const bo7index = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -18,7 +18,7 @@ const explore = () => {
   )
 }
 
-export default explore
+export default bo7index
 
 const styles = StyleSheet.create({
   container: {
