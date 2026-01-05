@@ -32,11 +32,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 16,
         borderRadius: 12,
-        backgroundColor: '#2563eb',
     },
     icon: {
-        width: 48,
-        height: 48,
+        width: 72,
+        height: 72,
         resizeMode: 'contain',
         marginBottom: 6,
     },

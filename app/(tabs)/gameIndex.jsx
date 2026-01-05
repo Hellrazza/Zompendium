@@ -32,9 +32,9 @@ const gameIndex = () => {
           {games.map((game) => (
           <GameButton
             key={game.href}
-            title={game.title}
             icon={game.icon}
             href={game.href}
+            style={styles.button}
           />
         ))}
       </View> 
@@ -53,10 +53,11 @@ const styles = {
     },
 
     grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: 6,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+      paddingHorizontal: 16,
+      gap: 12,
     },
 
     title: {
@@ -75,36 +76,8 @@ const styles = {
         justifyContent: 'center'
     },
     
-    link: {
-        color: 'white',
-        fontSize: 42,
-        fontWeight: 'bold',
-        textDecorationLine: 'underline',
-        textAlign: 'center',
-        padding: 4,
-    },
-
     button: {
-        width: '32%',
-        height: 60,
-        borderRadius: 20,
-        justifyContent: "center",
-        backgroundColor: 'rgba(0,0,0,0.75)',
-        padding: 6,
-        marginBottom: 12,
-    },
-
-    icon: {
-      width:20,
-      height:20,
-      resizeMode:'contain',
-    },
-
-    buttonText: {
-        color: 'white',
-        fontSize: 16,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        padding: 4,
+      width: '45%',
+      height: 140,
     }
 }
