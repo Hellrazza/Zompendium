@@ -4,7 +4,7 @@ import React from 'react'
 import theGiantImg from "@/assets/images/the-giant.jpg"
 
 
-const bo1index = () => {
+const bo5index = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -12,13 +12,13 @@ const bo1index = () => {
       resizeMode="cover"
       style={styles.image}
       >
-      <Text style={styles.text}>Black Ops 1</Text>
+      <Text style={styles.text}>Cold War</Text>
       </ImageBackground>
     </View>
   )
 }
 
-export default bo1index
+export default bo5index
 
 const styles = StyleSheet.create({
   container: {

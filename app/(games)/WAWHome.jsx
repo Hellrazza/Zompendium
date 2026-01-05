@@ -12,7 +12,7 @@ const wawIndex = () => {
       resizeMode="cover"
       style={styles.image}
       >
-      <Text style={styles.text}>Black Ops 6</Text>
+      <Text style={styles.text}>WAW</Text>
       </ImageBackground>
     </View>
   )
