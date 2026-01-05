@@ -5,16 +5,22 @@ import { GameButton } from '@/components/GameButton'
 
 
 const games = [
-  { icon: require('@/assets/icons/games/waw.png'), href: '/WAWHome' },
-  { icon: require('@/assets/icons/games/blackops1.png'), href: '/BlackOps1Home' },
+  { icon: require('@/assets/icons/games/waw.png'), 
+    href: '/games/waw' },
+  { icon: require('@/assets/icons/games/blackops1.png'),
+     href: '/games/bo1' },
   { icon: require('@/assets/icons/games/blackops2.png'), 
-    href: '/BlackOps2Home' },
+    href: '/games/bo2' },
   { icon: require('@/assets/icons/games/blackops3.jpg'),
-    href: '/BlackOps3Home' },
-  { icon: require('@/assets/icons/games/blackops4.jpg'), href: '/BlackOps4Home' },
-  { icon: require('@/assets/icons/games/coldwar.png'), href: '/BlackOps5Home' },
-  { icon: require('@/assets/icons/games/bo6.png'), href: '/BlackOps6Home' },
-  { icon: require('@/assets/icons/games/bo7.png'), href: '/BlackOps7Home' },
+    href: '/games/bo3' },
+  { icon: require('@/assets/icons/games/blackops4.jpg'), 
+    href: '/games/bo4' },
+  { icon: require('@/assets/icons/games/coldwar.png'), 
+    href: '/games/bo5' },
+  { icon: require('@/assets/icons/games/bo6.png'),
+     href: '/games/bo6' },
+  { icon: require('@/assets/icons/games/bo7.png'),
+     href: '/games/bo7' },
 ];
 
 
