@@ -1,60 +1,43 @@
-import { View, Text, ImageBackground, StyleSheet, Pressable } from 'react-native'
+import { View, Text, ImageBackground, StyleSheet, Pressable, Image } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
+import { GameButton } from '@/components/GameButton'
 
-import znsImg from "@/assets/images/wallpaper.jpg"
+
+const games = [
+  { icon: require('@/assets/icons/games/waw.png'), href: '/WAWHome' },
+  { icon: require('@/assets/icons/games/blackops1.png'), href: '/BlackOps1Home' },
+  { icon: require('@/assets/icons/games/blackops2.png'), 
+    href: '/BlackOps2Home' },
+  { icon: require('@/assets/icons/games/blackops3.jpg'),
+    href: '/BlackOps3Home' },
+  { icon: require('@/assets/icons/games/blackops4.jpg'), href: '/BlackOps4Home' },
+  { icon: require('@/assets/icons/games/coldwar.png'), href: '/BlackOps5Home' },
+  { icon: require('@/assets/icons/games/bo6.png'), href: '/BlackOps6Home' },
+  { icon: require('@/assets/icons/games/bo7.png'), href: '/BlackOps7Home' },
+];
+
+
 const gameIndex = () => {
   return (
     <View style = {styles.container}>
         <ImageBackground
-        source={znsImg}
+        source={require('@/assets/images/wallpaper.jpg')}
         resizeMode="cover"
         style={styles.image}
         >
       <Text style = {styles.title}>Games</Text>
 
-        <View style={styles.grid}>
-          <Link href="/WAWHome" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>World at War</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps1Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps2Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops 2</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps3Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops 3</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps4Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops 4</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps5Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Cold War</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps6Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops 6</Text>
-            </Pressable>
-          </Link>
-          <Link href="/BlackOps7Home" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Black Ops 7</Text>
-            </Pressable>
-          </Link>
-        </View> 
+      <View style={styles.grid}>
+          {games.map((game) => (
+          <GameButton
+            key={game.href}
+            title={game.title}
+            icon={game.icon}
+            href={game.href}
+          />
+        ))}
+      </View> 
          
     
       </ImageBackground>
@@ -109,6 +92,12 @@ const styles = {
         backgroundColor: 'rgba(0,0,0,0.75)',
         padding: 6,
         marginBottom: 12,
+    },
+
+    icon: {
+      width:20,
+      height:20,
+      resizeMode:'contain',
     },
 
     buttonText: {
