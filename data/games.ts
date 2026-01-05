@@ -1,3 +1,5 @@
+import { Background } from "@react-navigation/elements";
+
 export const GAMES = {
     waw: {
         title: 'World at War',
@@ -30,7 +32,7 @@ export const GAMES = {
             { id: 'die-rise', title: 'Die Rise'},
             { id: 'motd', title: 'Mob of the Dead'},
             { id: 'buried', title: 'Buried'},
-            { id: 'origins', title: 'Origins'},
+            { id: 'origins', title: 'Origins', background: require('@/assets/images/originsBG.jpg'), easterEggs: ["Little Lost Girl", "Ice Staff", "Fire Staff", "Wind Staff", "Lightning Staff"]},
         ],
     },
     bo4: {

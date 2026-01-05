@@ -22,7 +22,7 @@ export default function GameHome() {
           {game.maps.map((map => (
             <Link
             key={map.id}
-            href={`/games/${gameId}/$(map.id}`}
+            href={`/games/${gameId}/${map.id}`}
             asChild
           >
             <Pressable style={styles.button}>
